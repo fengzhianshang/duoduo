@@ -53,5 +53,7 @@ Rails.application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
-  resources :articles, only: [:index, :create, :update, :destroy]
+  resources :articles, only: [:index, :create, :update, :destroy] do
+    resources :comments, only: [:index, :create, :update, :destroy]
+  end
 end
