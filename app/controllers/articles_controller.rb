@@ -11,8 +11,6 @@ class ArticlesController < ApplicationController
 
   def update
     article = Article.find(params[:id])
-    article.title = article_params[:title]
-    article.body = article_params[:body]
     article.update_attributes!(article_params)
     render json: { status: 200, article: article }
   end

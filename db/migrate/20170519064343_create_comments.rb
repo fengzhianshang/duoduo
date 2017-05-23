@@ -1,6 +1,6 @@
-class CreateCommits < ActiveRecord::Migration
+class CreateComments < ActiveRecord::Migration
   def change
-    create_table :commits do |t|
+    create_table :comments do |t|
       t.text :content
       t.integer :article_id
 
