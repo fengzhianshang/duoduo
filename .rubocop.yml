@@ -1,0 +1,25 @@
+AllCops:
+  Exclude:
+    - vendor/**/*
+    - bin/**/*
+    - db/**/*
+    - assets/**/*
+    - log/**/*
+    - public/**/*
+  TargetRubyVersion: 2.2
+
+Documentation:
+  Enabled: false
+
+Rails:
+  Enabled: true
+
+Metrics/LineLength:
+  Max: 200
+
+Style/ClassAndModuleChildren:
+  Exclude:
+    - 'test/test_helper.rb'
+
+Rails/HttpPositionalArguments:
+  Enabled: false
