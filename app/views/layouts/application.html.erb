@@ -1,31 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>乌托邦</title>
+  <title>快乐分享</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <%= render 'shared/navbar' %>
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-md-10 col-md-offset-1">
-        <div class="row">
-          <div class="col-md-8">
-            <%= yield %>
-          </div>
-          <div class="col-md-4">
-            <div class="panel panel-default">
-              <div class="panel-heading">最具人气</div>
-              <div class="panel-body">
-                Panel content
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+  <%= yield %>
 </body>
 </html>
